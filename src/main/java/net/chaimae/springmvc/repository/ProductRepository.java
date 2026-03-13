@@ -1,4 +1,7 @@
 package net.chaimae.springmvc.repository;
 
-public class ProductRepository  extends JpaRepository<Product, Long> {
+import net.chaimae.springmvc.entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository  extends JpaRepository<Product, Long> {
 }
